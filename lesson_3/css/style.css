@@ -1,1 +1,38 @@
 @import url("reset.css");
+* {
+font-weight: bold;
+}
+h1{
+    color: brown;
+}
+.chapter {
+    color: crimson;
+}
+.list {
+    color: darkgreen;
+}
+.article {
+    color: gold;
+}
+#some {
+    color: midnightblue;
+}
+[class*="xt"] {
+    color: blueviolet;
+}
+div.text {
+color: darkmagenta;
+}
+.title,
+.page {
+    color: chartreuse;
+}
+.link a {
+    color: chocolate;
+}
+.all * {
+color: darkgreen;
+}
+.box ~ p {
+    color: darkturquoise;
+}
