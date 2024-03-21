@@ -1,0 +1,84 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap');
+
+ @import url(https://fonts.googleapis.com/css?family=Noto+Music:regular);
+
+@import url("fonts.css");
+@import url("reset.css");
+
+
+.title {
+    font-family: "LondrinaSolid-Light", sans-serif;
+    text-transform: uppercase;
+}
+.sub-title {
+    font-family: "BioRhyme", serif;
+}
+.list {
+    font-family: "Noto Music", sans-serif;
+}
+  .one {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+  .two {
+    font-style: italic;
+    white-space: normal;
+  }
+  .three {
+    font-family: "BioRhyme", serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.25; /* 20/16 */
+  }
+  .four {
+    font-family: "Noto Music", sans-serif;
+    font-weight: 700;
+    color: rgba(137, 43, 226, 0.575);
+}
+.five {
+    font-family: "BioRhyme", serif;
+    font-weight: 500;
+    text-align: right;
+}
+.six {
+    font-family: "LondrinaSolid-Thin", sans-serif;
+    text-decoration: underline wavy rgba(255, 72, 0, 0.705);
+}
+.seven {
+    font-family: "BioRhyme", serif;
+    font-weight: 100;
+    text-shadow: 5px 2px 5px rgba(238, 255, 0, 0.925),    
+    -5px -5px 5px rgba(0, 17, 255, 0.603);
+}
+.footer {
+    font-family: "BioRhyme", serif;
+    font-weight: 200;
+    color: rgb(255, 0, 13);
+}
+.bed {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 2.50; /* 40/16 */
+    color: #2b2929;
+    text-align: center;
+}
+.discribe {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #2b2929;
+    margin-bottom: 10px;
+}
+.room {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25; /* 20/16 */
+    color: #2b2929;
+    /* margin-bottom: 0px; */
+}
