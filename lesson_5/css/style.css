@@ -1,0 +1,267 @@
+ 
+
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Music:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url("fonts.css");
+@import url("reset.css");
+
+
+.title {
+   font-family: "LondrinaSolid-Light", sans-serif;
+   text-transform: uppercase;
+}
+.text {
+   padding: 200px;
+}
+.sub-title {
+   font-family: "BioRhyme", serif;
+}
+
+.one {
+   padding: 20px 100px;
+   font-family: "Londrina Solid", sans-serif;
+   font-size: 20px;
+   letter-spacing: 10px;
+}
+
+.two {
+   padding: 20px 50px 30px;
+   font-style: italic;
+   white-space: normal;
+}
+
+.three {
+   padding: 20px 50px 30px 100px;
+   font-family: "BioRhyme", serif;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 1.25;
+   /* 20/16 */
+}
+
+.four {
+   padding-right: 100px;
+   font-family: "Noto Music", sans-serif;
+   font-weight: 700;
+   color: rgba(137, 43, 226, 0.575);
+}
+
+.textone {
+
+}
+.five {
+   margin: 100px;
+   font-family: "BioRhyme", serif;
+   font-weight: 500;
+}
+
+.six {
+   margin: 50px 60px 70px 80px;
+   font-family: "LondrinaSolid-Thin", sans-serif;
+   text-decoration: underline wavy rgba(255, 72, 0, 0.705);
+   background-color: aquamarine;
+}
+
+.seven {
+   width:100%;
+   margin-top: 20px;
+   margin-left: 50px;
+   margin-bottom: 80px;
+}
+.eight {
+   max-width: 100%;
+   margin-bottom: 50px;
+}
+.nine {
+   width: 100px;
+   padding: 50px;
+}
+
+.height {
+   margin-top: 40px;
+min-height: 100px;
+}
+.scroll {
+   font-family: "Noto Music", sans-serif;
+   height: 100px;
+   overflow: scroll;
+   margin-bottom: 50px;
+}
+.scrollone {
+   overflow: auto;
+   height: 50px;
+   font-family: "Noto Music", sans-serif;
+      font-weight: 700;
+      color: rgba(137, 43, 226, 0.575);
+}
+.inline {
+   display: inline-block;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+.center {
+   width: 70%;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+
+
+.bed {
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 1.5;
+     color: #2b2929;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.discribe {
+   font-family: 'Proxima Nova', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 30px;
+   color: #2b2929;
+   margin-bottom: 30px;
+   overflow: hidden;
+   
+}
+
+.room {
+   font-family: 'Proxima Nova', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 1.25;
+   /* 20/16 */
+   color: #2b2929;
+   margin-bottom: 20px;
+}
+.section {
+   max-width: 500px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.items {
+   margin-left: -5px;
+   margin-right: -5px;
+   font-size: 0;
+}
+.item {
+   width: 33.333%; 
+   display: inline-block;
+   margin-bottom: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+
+}
+.content {
+  padding: 20px;
+   background-color: blueviolet;
+   text-align: center;
+   font-size: 30px;
+}
+
+.footer {
+   font-family: "BioRhyme", serif;
+   font-weight: 900;
+   color: rgb(255, 0, 13);
+}
+.img {
+   vertical-align: top;
+   width: 100%;
+   max-width: 1070;
+   height: 380;
+   margin-bottom: 40px;
+}
+.krovato {
+   font-family: 'Proxima Nova', sans-serif;
+   color: #2b2929;
+   
+}
+.about {
+   font-family: 'Proxima Nova', sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+       color: #2b2929;
+        line-height: 48px; 
+       width: 100%;
+       text-align: center;
+       margin-bottom: 40px;
+}
+.sect {
+   font-family: 'Proxima Nova', sans-serif;
+   max-width: 90%;
+   margin: 0 auto;
+   overflow: hidden;
+   text-align: center;
+   vertical-align: top;
+}
+
+.itm {
+   margin-left: -5px;
+   margin-right: -5px;
+   font-size: 0px;
+   
+}
+
+.it {
+   width: 25%;
+   display: inline-block;
+   margin-bottom: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+   vertical-align: top;
+   
+
+}
+
+.cont {
+   padding: 20px; 
+   text-align: center;
+   font-size: 30px;
+}
+.tit {
+font-size: 26px;
+font-weight: 600;
+line-height:1.30769;
+margin-bottom: 20px;
+width: 100%;
+max-width: 300px;
+font-style: normal;
+}
+.tone {
+   font-size: 16px;
+   line-height: 30px;
+}
+.card {
+   max-width: 170px;
+   margin-bottom: 20px;
+   
+}
+
+.prod {
+   color: #000;
+   font-size: 50px;
+   font-style: normal;
+   margin-top: 0;
+   text-align: center;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   width: 100%;
+   margin-bottom: 40px;
+
+}
+.foto {
+   background-color: rgba(127, 255, 244, 0.76);
+}
+.foto1 {
+width: 16,6%;
+display: inline-block;
+margin-bottom: 10px;
+padding-left: 5px;
+padding-right: 5px;
+vertical-align: top;
+margin: 10px;
+}
