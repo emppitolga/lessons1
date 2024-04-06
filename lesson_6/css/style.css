@@ -269,3 +269,9 @@ background: url(../img/kidandbooks.png) no-repeat right, linear-gradient(rgb(204
         /* box-shadow: 0 5px 0px black; */
         margin-top: 30px;
 }
+.foto {
+    border: solid white;
+    border-radius: 160px 0px 160px 0px;
+    box-shadow: 10px 10px 30px grey;
+    margin: 50px;
+}
