@@ -1,0 +1,462 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Exo:regular,500,600,700,800,900,);
+ @import url(https://fonts.googleapis.com/css?family=Noto+Music:regular);
+ @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,,700);
+@import url("fonts.css");
+@import url("reset.css");
+
+/* звернення до єлементу наведенням миші */
+.ones:hover {
+font-family: "Proxima Nova", sans-serif;
+font-weight: 600;
+font-size: 20px;
+background-color: rgb(82, 177, 82);
+}
+
+.block {
+background-color: rgb(0, 174, 255);
+color: white;
+font-size: 20px;
+border: 2px solid green;
+border-radius: 10px;
+padding: 15px;
+max-width: 500px;
+margin: 0 auto;
+}
+.image {
+display: none;
+}
+
+/* зміна кольору для link при наведенні курсору на батьківський елемент  */
+.block:hover .link {
+color: rgb(98, 0, 128);
+}
+
+/* поява image при наведенні курсору на батьківський елемент */
+.block:hover .image {
+display: block;
+}
+
+/* Стилізоване посилання */
+.button {
+font-family: "Proxima Nova", sans-serif;
+font-weight: 700;
+font-size: 18px;
+background-color: rgb(82, 115, 177);
+line-height: 1.5625; /* 25/16 */
+border-radius: 8px;
+padding: 12px;
+}
+.button span{
+    background: url(../img/label.png) left / 20px no-repeat;
+    display: inline-block;
+    padding-left: 35px;    
+}
+.button:hover {
+    background-color: rgb(255, 0, 157);
+    font-size: 20px;
+}
+.button:active {
+    background-color: crimson;
+}
+.button:visited {
+    /* background-color: aqua; */
+}
+/* частіше використовують focus-visible - при користуванні клавіатури */
+.button:focus {
+    border: 10px double;
+}
+.target {
+    /* display: block; */
+    font-family: "Proxima Nova", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        color: crimson;
+}
+.target:hover {
+    border: solid;
+}
+.text {
+    display: none;
+}
+.text:target {
+    display: block;
+}
+
+/* Стилізація через псевдокласси положення у коді */
+.styl {
+font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* стилізація перший та останній дочірній єлементи */
+.styl p:first-child {
+font-family: cursive;
+}
+.styl p:last-child {
+    color: brown;
+}
+
+.type {
+    font-family:'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* стилізація перший та останній вказані єлементи */
+.type p:first-of-type {
+    text-transform: uppercase;
+}
+
+.type ul:last-of-type {
+    text-shadow: 1px 5px 3px red;
+}
+/* стилізація до конкретного по номеру єлементу */
+.type li:nth-child(2) {
+    text-decoration: line-through;
+}
+/* стилізація до кожного не парного єлементу */
+.type p:nth-child(odd) {
+color: grey;
+}
+/* кожен другий, почиаючи з першого */
+.type li:nth-child(2n+1) {
+    font-family: cursive;
+}
+/* виключення стилізації для окремого єлементу */
+.styl p:not(:last-child) {
+margin-bottom: 20px;
+}
+
+.article { 
+    margin-bottom: 15px;
+font-family: 'Times New Roman', serif;
+font-weight: 600;
+color: rgb(97, 5, 5);
+}
+/* Приклад відступів за замоченням, та прибирання вісячого відступу
+чомусь не працює  */
+.content>* {
+margin-bottom: 15px;
+}
+.content>*:last-child {
+    margin-bottom: 0px;s
+}
+
+.title {
+font-weight: 900; 
+font-size: 24px;
+margin: 20px;
+}
+.content {
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.link1 {
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(20, 4, 4);
+}
+.link1:hover {
+    background-color: blue;
+}
+
+/* стилізація списку та посилання за допомогою псевдоєлементів */
+.listi {
+font-family: 'Times New Roman', serif;
+    font-weight: 600;
+text-align: center;
+margin-bottom: 20px;
+}
+.listitem:not(:last-child) {
+    margin-bottom: 5px;
+}
+.listitem::before {
+    content: "";
+    vertical-align: middle;
+    background: url(../img/images.jpg) 0 0 / 100% no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.listitem:hover::before {
+    opacity: 0.5;
+}
+
+.line {
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 24px;
+    box-shadow: 10px 10px 10px rgb(51, 45, 45);
+}
+.line::before {
+    content: "";
+    vertical-align: middle;
+    background: url(../img/line.png) 0 0 / 100% no-repeat;
+    width: 100px;
+    height: 51px;
+    margin-bottom: 5px;
+}
+
+.line:hover::before {
+    opacity: 0.5;
+}
+.line::after {
+    content: "";
+    vertical-align: middle;
+    background: url(../img/line.png) 0 0 / 100% no-repeat;
+    width: 100px;
+    height: 51px;
+    margin-bottom: 5px;
+}
+
+.line:hover::after {
+    opacity: 0.5;
+}
+.header {
+font-family: "Exo", serif;
+font-size: 36px;
+text-align: center;
+margin-bottom: 30px;
+font-weight: 2,25; /* 36/16 */
+}
+/* Стилізоване підкреслення  */
+.header::after {
+    content: "";
+    display: block;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 11%, rgba(29, 253, 192, 1) 38%, rgba(253, 89, 45, 1) 62%, rgba(253, 121, 54, 1) 79%, rgba(252, 176, 69, 1) 100%);
+}
+
+
+/* krovato скрін */
+.img {
+    max-width: 100%;
+}
+.bed {
+font-family: "Proxima Nova", sans-serif;
+font-weight: 600;
+font-size: 40px;
+line-height: 1.5;
+color: #2b2929;
+text-align: center;
+margin-bottom: 40px;
+}
+.discrib {
+font-family: 'Proxima Nova', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #2b2929;
+margin-bottom: 30px;
+overflow: hidden;
+}
+
+.discribe {
+width: 1070px;
+font-family: 'Proxima Nova', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #2b2929;
+margin-bottom: 30px;
+overflow: hidden;
+background-image: url(../img/label.png);
+background-position: left top;
+background-repeat: no-repeat;
+background-size: 50px;
+padding-left: 50px;
+min-height: 15px;
+}
+
+.room {
+font-family: 'Proxima Nova', sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.25;
+/* 20/16 */
+color: #2b2929;
+margin-bottom: 20px;
+}
+
+
+/* about me */
+.scrin {
+    background-color: black;
+}
+
+.about {
+    font-family: "Exo", serif;
+    text-align: center;
+    color: white;
+}
+
+.one {
+    text-transform: uppercase;
+    min-width: 401px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+
+}
+
+.one::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(182, 43, 85, 1) 1%, rgba(26, 180, 46, 1) 54%, rgba(0, 65, 255, 1) 100%) center / 400px no-repeat;
+}
+
+.two {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: -2%;
+    margin-bottom: 60px;
+    text-align: center;
+padding-left: 100px;
+    padding-right: 100px;
+}
+.three {
+    margin-bottom: 50px;
+}
+.cash {
+    display: inline-block;
+    font-family: Orbitron, serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.three li:first-child {
+    margin-left: 100px;
+}
+
+.cir {
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(182, 43, 85, 1) 1%, rgba(26, 180, 46, 1) 54%, rgba(0, 65, 255, 1) 100%);
+}
+
+.address {
+    background-color: black;
+    color: white;
+    min-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section {
+    margin-left: -5px;
+    margin-right: -5px;
+
+}
+
+.addresszero {
+    display: inline-block;
+    font-family: "Exo", serif;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.addresszero::before {
+    content: "";
+    vertical-align: middle;
+    background: url(../img/Call.png) 0 0 /100% no-repeat;
+    width: 20px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.addressone {
+    display: inline-block;
+    font-family: "Exo", serif;
+    width: 33.333%;
+}
+
+.addressone::before {
+    content: "";
+    vertical-align: middle;
+    background: url(../img/Vector.png) 0 0 /100% no-repeat;
+    width: 20px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.addresstwo {
+    display: inline-block;
+    font-family: "Exo", serif;
+    width: 33.333%;
+}
+
+.addresstwo::before {
+    content: "";
+    vertical-align: middle;
+    background: url(../img/Layer\ 2.png) 0 0 /100% no-repeat;
+    width: 20px;
+    height: 30px;
+    margin-left: 10px;
+}
+/* game */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+}
+.start {
+    background: white;
+    height: 50px;
+}
+
+.start:hover {
+   background: red url(../img/right.png) center / 50px no-repeat;
+}
+.down {
+    background: white;
+    width: 5%;
+    height: 50px;
+    margin-left: 95%;
+}
+.down:hover {
+    background: red url(../img/down.png) center / 50px no-repeat;
+}
+.left {
+    background: white;
+        height: 50px;
+}
+.left:hover {
+background: red url(../img/left.png) center / 50px no-repeat;
+}
+.end {
+    background: white;
+        width: 5%;
+        height: 50px;
+}
+.end:hover {
+background: red url(../img/down.png) center / 50px no-repeat;
+}
+.finsh {
+    opacity: 0;
+}
+.finsh:hover {
+    opacity: 1;
+}
