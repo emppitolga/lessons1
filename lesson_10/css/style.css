@@ -205,7 +205,7 @@ bottom: 5%;
     background-color: darkgreen;
 }
 .sub-menu {
-    position: absolutes;
+    position: absolute;
     left: 0;
     top: 100%;    
     padding: 10px;
@@ -287,10 +287,9 @@ bottom: 5%;
 
 
 
-
+/* Каталог  */
 .directory {
-    font-family:'Proxima Nova', sans-serif;
-    /* vertical-align: middle; */
+    font-family:'Proxima Nova', sans-serif;    
 }
 
 .directory__catalog {
