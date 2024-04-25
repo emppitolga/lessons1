@@ -196,13 +196,12 @@ bottom: 5%;
     font-size: 18px;
     background-color: blue;
 }
-.list__link:hover  {
-
-    
+.list__link:hover  {    
     text-decoration: underline;
 }
 .list__menu:hover .list__link {
     background-color: darkgreen;
+    
 }
 .sub-menu {
     position: absolute;
@@ -221,6 +220,7 @@ bottom: 5%;
 
 .sub-menu__item {
     background-color: darkgreen;
+    
 }
 .sub-menu__item:not(:last-child) {
     margin-bottom: 10px;
@@ -236,6 +236,8 @@ bottom: 5%;
 /* Стилізація списку */
 .some-text {
     position: relative;
+    margin-top: 100px;
+    
 
 }
 
@@ -303,16 +305,21 @@ bottom: 5%;
     font-size: 19px;
     color: white;
     margin-bottom: 40px;
+    
 }
 
 .directory__position {
     font-size: 20px;
     font-weight: 600;
-    height: 600px;
-    width: 300px;
-    border-right:rgb(255, 188, 87) solid;
+    overflow: hidden;
+    height: 100%;
+    width: 600px;
     border-radius: 8px;
     display: none;
+    background-color: #f8f8f8;
+    
+    
+
 }
 .directory:hover .directory__position {
 display: block;
@@ -323,6 +330,8 @@ display: block;
 width: 300px;
 height: 60px; 
 background: url(../img/m/arrow.svg) 260px 10px / 3% no-repeat;
+background-color: #f8f8f8;
+border-right: rgb(255, 188, 87) solid;
 }
 
 .directory__img {
@@ -330,7 +339,7 @@ vertical-align: top;
 display: inline-block;
 width: 50px;
 height: 60px;
-padding: 10px;
+padding: 10px; 
 }
 
 
@@ -343,31 +352,35 @@ margin-left: 10px;
     background-color: rgb(255, 188, 87);
 }
 
-
-
-
-
 .sub-name {
-    width: 268px;
-    height: 440px;
-    font-weight: 400;
+    /* max-width: 268px; */
+    /* height: 800px;
+    font-weight: 400; */
     font-size: 19px;
     line-height: 2.10526316; /* 40px/19 */
     display: none; 
     position: absolute;
-    margin-left: 200px;
+    margin-left: 167px;
     margin-top: -60px;
+    height: 100%;
+    
+}
 
-}
+
 .directory__name:hover .sub-name {
-display: inline-block;
-}
+display: inline-block
+} 
 
 .sub-name__items {
     font-weight: 400;
     font-size: 19px;
     line-height: 2.10526316; /* 40px/19 */
-
+    overflow-y: auto;
 }
 
-.sub-name__item {}
+.sub-name__item {
+    background-color: #f8f8f8;
+}
+.sub-name__item:hover {
+    background-color: rgb(255, 188, 87);
+}
