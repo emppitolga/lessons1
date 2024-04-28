@@ -1,0 +1,505 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Exo:regular,500,600,700,800,900,);
+ @import url(https://fonts.googleapis.com/css?family=Noto+Music:regular);
+ @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,,700);
+@import url("fonts.css");
+@import url("reset.css");
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.page {
+padding: 20px;
+}
+/* translate */
+.block {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 255, 255, 0.815);
+    margin-bottom: 30px;
+}
+.block__item {
+    /* transform: translate(-20px, 20px); */
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 212, 0.815);
+}
+
+.block:hover .block__item {
+    transform: translate(-20px,20px);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 212, 0.938);
+}
+
+/* scale */
+.blockone {
+    width: 150px;
+        height: 150px;
+        background-color: rgba(0, 255, 106, 0.815);
+        margin-bottom: 30px;
+}
+.blockone__item {
+    transform: scale(0.5);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 47, 255, 0.815);
+    }
+
+.blockone:hover .blockone__item {
+    transform: scale(0.1);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 47, 255, 0.815);
+}
+/* rotate */
+.blocktwo {
+    width: 150px;
+        height: 150px;
+        background-color: rgba(255, 0, 191, 0.815);
+        margin-bottom: 30px;
+}
+
+
+.blocktwo__item {
+    transform: rotate(45deg);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 255, 242, 0.329);
+}
+
+.blocktwo:hover .blocktwo__item {
+    transform: rotate(65deg);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 0, 191, 0.329);
+}
+
+/* skew */
+.blockthre {
+    width: 150px;
+        height: 150px;
+        background-color: rgba(255, 153, 0, 0.815);
+        margin-bottom: 30px;
+}
+
+.blockthre__item {
+    transform: skew(10deg, -25deg);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(229, 255, 0, 0.39);
+}
+.blockthre:hover .blockthre__item {
+transform: skew(20deg, 25deg);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 153, 255, 0.39)
+}
+
+/* matrix */
+.blockfore {
+    width: 150px;
+        height: 150px;
+        background-color: rgba(102, 255, 0, 0.815);
+        margin-bottom: 30px;
+}
+
+.blockfore__item {
+    transform: translate(10px, 10px) scale(0.5) rotate(-35deg) skew(20deg);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 255, 170, 0.897);
+}
+.blockfore:hover .blockfore__item {
+transform: translate(20px, 20px) scale(0.7) rotate(35deg) skew(50deg);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(146, 189, 206, 0.897);
+}
+
+/* transform-origin */
+.blockfive {
+width: 150px;
+height: 150px;
+background-color: rgba(255, 0, 255, 0.815);
+margin-bottom: 100px;
+    
+}
+
+.blockfive__item {
+transform: rotate(45deg);
+transform-origin: 0 100px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(238, 255, 0, 0.808);
+}
+.blockfive:hover .blockfive__item {
+transform: rotate(15deg);
+    transform-origin: 100 0px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 225, 255, 0.808);
+}
+
+/* perspective */
+
+.blocksix {
+    width: 150px;
+        height: 150px;
+        background-color: rgba(0, 247, 255, 0.815);
+        margin-bottom: 50px;
+        perspective: 400px;
+}
+
+.blocksix__item {
+    transform: rotateX(65deg);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 38, 255, 0.808);
+}
+.blocksix:hover .blocksix__item {
+    transform: rotateX(15deg);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 255, 85, 0.808);
+}
+
+.block3d {
+    width: 150px;
+        height: 150px;
+        background-color: rgba(255, 0, 21, 0.815);
+        margin-bottom: 50px;
+        perspective: 300px;
+}
+
+.block3d__item {
+    transform: rotate3d(10, 25, 50, 70deg);
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 0, 140, 0.808);
+    }
+.block3d:hover .block3d__item {
+transform: rotate3d(50, 15, 100, 40deg);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 140, 0.808);
+}
+
+
+.block3dstyle {
+width: 150px;
+    height: 150px;
+    background-color: rgba(0, 255, 98, 0.829);
+    margin-bottom: 50px;
+    perspective: 300px;
+    transform-style: preserve-3d;
+}
+    
+.block3dstyle__item {
+transform: rotateX(65deg);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(183, 0, 255, 0.808);
+}
+
+.block3dstyle:hover .block3dstyle__item {
+transform: rotateX(85deg);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.808);
+}
+/* Перегортання картки */
+.blockbackface {
+    width: 150px;
+        height: 150px;
+        perspective: 900px;
+}
+
+.blockbackface__front,
+.blockbackface__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.blockbackface__back {
+    background: url(../img/card5.jpg);
+    transform: rotateY(-180deg);
+    color: aliceblue;
+}
+
+.blockbackface__front {
+    background: url(../img/card6.jpg);
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.blockbackface__body:hover .blockbackface__back {
+    transform: rotateY(0deg);
+}
+.blockbackface__body:hover .blockbackface__front {
+    transform: rotateY(180deg);
+}
+/* Колесо */
+.wheel {
+    width: 150px;
+        height: 150px;
+        background-color: cornflowerblue;
+        border-radius: 50%;
+        border: 10px dashed gold;
+}
+
+
+
+.space {
+position: relative;
+    width: 1000px;
+        height: 1000px;
+    background: url(../img/space.webp) no-repeat;
+}
+.space__car {
+    width: 600px;
+    height: 200px;
+    background-color: rgb(36, 28, 28);
+    box-shadow: 10px 10px 2px rgba(255, 208, 0, 0.377);
+    border-radius: 50%;
+    border: double rgb(0, 255, 136);
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    z-index: 2;
+}
+.space__light {
+width: 20px;
+    height: 20px;
+    outline: rgba(0, 255, 255, 0.815) solid;
+    background-color: rgb(213, 229, 235);
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 400px;
+    z-index: 2;
+}
+.space__light:hover {
+    background-color: rgb(255, 0, 242);
+}
+
+.space__light1 {
+    width: 20px;
+    height: 20px;
+    outline:rgba(0, 255, 255, 0.815) solid;
+    background-color: rgb(213, 229, 235);
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 500px;
+    z-index: 2;
+}
+.space__light1:hover {
+    background-color: gold;
+}
+.space__light2 {
+    width: 20px;
+    height: 20px;
+outline: rgba(0, 255, 255, 0.815) solid;
+    background-color: rgb(213, 229, 235);
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 600px;
+    z-index: 2;
+}
+.space__light2:hover {
+    background-color: rgb(255, 81, 0);
+}
+.space__light3 {
+    width: 20px;
+    height: 20px;
+    outline: rgba(0, 255, 255, 0.815) solid;
+    background-color: rgb(213, 229, 235);
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 700px;
+    z-index: 2;
+}
+.space__light3:hover {
+    background-color: rgb(0, 102, 255);
+}
+.space__light4 {
+    width: 20px;
+    height: 20px;
+outline: rgba(0, 255, 255, 0.815) solid;
+    background-color: rgb(213, 229, 235);
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 800px;
+    z-index: 2;
+}
+.space__light4:hover {
+    background-color: rgb(21, 255, 0);
+}
+.space__light5 {
+    width: 20px;
+    height: 20px;
+outline: rgba(0, 255, 255, 0.815) solid;
+    background-color: rgb(213, 229, 235);
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 900px;
+    z-index: 2;
+}
+.space__light5:hover {
+    background-color: rgb(255, 0, 85);
+}
+
+
+.window {
+    width: 270px;
+        height: 180px;
+        border: 1px solid rgb(0, 255, 200);
+        background-color: rgb(36, 28, 28);
+        border-radius: 70%;
+        position: absolute;
+        top: 200px;
+        left: 500px;
+}
+.card {
+
+}
+
+.card__body {
+    position: absolute;
+    top: 220px;
+        left: 550px;
+    width: 300px;
+    perspective: 800px;
+    
+}
+
+.card__body img {
+    width: 55%;
+}
+
+.card__front,
+.card__back {
+    transition: all 0.5s;
+}
+
+.card__front {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card__back {
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+
+.card__body:hover .card__front {
+    transform: rotateY(0deg);
+}
+
+.card__body:hover .card__back {
+    transform: rotateY(-180deg);
+}
+
+.portal {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid rgba(78, 173, 173, 0.733);
+    position: absolute;
+    left: 490px;
+top: 450px;    
+
+}
+.portal__man {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    opacity: 0.25;
+    display: none;
+}
+.portal:hover .portal__man {
+    display: block;
+}
+
+.line {
+    width: 570px;
+    height: 5px;
+    border-bottom: 1px dotted rgb(21, 255, 0);
+    border-top: 1px dotted rgb(21, 255, 0);
+    position: absolute;
+    top: 370px;
+        left: 365px;
+        z-index: 2;
+}
+
+.line1 {
+    width: 570px;
+    height: 5px;
+    border-bottom: 1px dotted rgb(21, 255, 0);
+    border-top: 1px dotted rgb(21, 255, 0);
+    position: absolute;
+    top: 420px;
+    left: 365px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
