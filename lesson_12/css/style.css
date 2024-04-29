@@ -1,0 +1,370 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Exo:regular,500,600,700,800,900,);
+ @import url(https://fonts.googleapis.com/css?family=Noto+Music:regular);
+ @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,,700);
+@import url("fonts.css");
+@import url("reset.css");
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.page {
+padding: 20px;
+}
+
+
+
+
+
+.space {
+position: relative;
+    width: 1000px;
+        height: 1000px;
+    background: url(../img/space.webp) no-repeat;
+}
+.space__car {
+    width: 600px;
+    height: 200px;
+    background-color: rgb(36, 28, 28);
+    box-shadow: 10px 10px 2px rgba(255, 208, 0, 0.377);
+    border-radius: 50%;
+    border: double rgb(0, 255, 136);
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    z-index: 2;
+}
+
+.space__light {
+width: 20px;
+    height: 20px;
+    outline: rgba(0, 255, 255, 0.815) dotted;
+    background-color: rgb(213, 229, 235);
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 400px;
+    z-index: 2;
+}
+@keyframes space {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-300px, 50px);
+    }
+    100% {
+        transform: translate(100px, -200px);
+    }
+}
+.space__modul {
+    animation-name: space;
+}
+.space__modul {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes light {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgb(166, 255, 0);
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: rgb(42, 165, 165);
+    }
+}
+
+.space__light {
+    animation-name: light;
+}
+.space__light {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.space__light1 {
+    width: 20px;
+    height: 20px;
+    outline:rgba(0, 255, 255, 0.815) dotted;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 500px;
+    z-index: 2;
+}
+.space__light1 {
+    animation-name: light;
+}
+
+.space__light1 {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.space__light2 {
+    width: 20px;
+    height: 20px;
+outline: rgba(0, 255, 255, 0.815) dotted;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 600px;
+    z-index: 2;
+}
+.space__light2 {
+    animation-name: light;
+}
+
+.space__light2 {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.space__light3 {
+    width: 20px;
+    height: 20px;
+    outline: rgba(0, 255, 255, 0.815) dotted;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 700px;
+    z-index: 2;
+}
+.space__light3 {
+    animation-name: light;
+}
+
+.space__light3 {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.space__light4 {
+    width: 20px;
+    height: 20px;
+outline: rgba(0, 255, 255, 0.815) dotted;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 800px;
+    z-index: 2;
+}
+.space__light4 {
+    animation-name: light;
+}
+
+.space__light4 {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.space__light5 {
+    width: 20px;
+    height: 20px;
+outline: rgba(0, 255, 255, 0.815) dotted;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 900px;
+    z-index: 2;
+}
+.space__light5 {
+    animation-name: light;
+}
+
+.space__light5 {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.window {
+    width: 270px;
+        height: 180px;
+        border: 1px solid rgb(0, 255, 200);
+        background-color: rgb(36, 28, 28);
+        border-radius: 70%;
+        position: absolute;
+        top: 200px;
+        left: 500px;
+}
+.card {
+
+}
+
+.card__body {
+    position: absolute;
+    top: 220px;
+        left: 550px;
+    width: 300px;
+    perspective: 800px;
+    
+}
+
+.card__body img {
+    width: 55%;
+}
+
+.card__front,
+.card__back {
+    transition: all 0.5s;
+}
+
+.card__front {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card__back {
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+
+.card__body:hover .card__front {
+    transform: rotateY(0deg);
+}
+
+.card__body:hover .card__back {
+    transform: rotateY(-180deg);
+}
+
+.portal {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid rgba(78, 173, 173, 0.733);
+    position: absolute;
+    left: 490px;
+top: 450px;    
+
+}
+.portal__man {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    opacity: 0.25;
+    display: none;
+}
+.portal:hover .portal__man {
+    display: block;
+}
+
+@keyframes line {
+    0% {
+    border-bottom: 1px dotted rgb(21, 255, 0);
+        border-top: 1px dotted rgb(21, 255, 0);
+    }
+    100% {
+    border-bottom: 1px dotted rgb(195, 0, 255);
+    border-top: 1px dotted rgb(0, 102, 255);
+    }
+}
+.line {
+    animation-name: line;
+}
+
+.line {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.line {
+    width: 570px;
+    height: 5px;
+    border-bottom: 1px dotted rgb(21, 255, 0);
+    border-top: 1px dotted rgb(21, 255, 0);
+    position: absolute;
+    top: 370px;
+        left: 365px;
+        z-index: 2;
+}
+
+.line1 {
+    width: 570px;
+    height: 5px;
+    border-bottom: 1px dotted rgb(21, 255, 0);
+    border-top: 1px dotted rgb(21, 255, 0);
+    position: absolute;
+    top: 420px;
+    left: 365px;
+    z-index: 2;
+}
+.help {    
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+        left: 550px;
+        top: 550px;
+        opacity: 0.3;
+}
+@keyframes help {
+    0% {
+    background-color: blanchedalmond;
+    }
+    100% {
+    background-color: rgb(223, 117, 31);
+    opacity: 0.7;
+    }
+}
+
+.help {
+    animation-name: help;
+}
+
+.help {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
